@@ -1,0 +1,11 @@
+Author: Gabriel Comarita
+Website: http://wwwp.bitrepository.com/
+
+Dynamic Dependant DropDown
+
+Note: The installation is very easy! Follow the steps below!
+
+
+1) Edit db.php: set the right login information to connect to the database (host, username, password and database name)
+
+2) Run import.php to create the database tables and fill them
