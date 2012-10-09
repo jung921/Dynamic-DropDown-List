@@ -1,31 +1,31 @@
 function drop_down_list()
 {
-    var state = $('#state').val();
+    var levels = $('#levels').val();
 
-    if(state == 'AK' || state == 'DC') // Alaska and District Columbia have no counties
+    if(levels == 'CD' || levels == 'NN') // This level has no study options
     {
-    $('#county_drop_down').hide();
-    $('#no_county_drop_down').show();
+    $('#study_drop_down').hide();
+    $('#no_study_drop_down').show();
     }
     else
     {
-    $('#loading_county_drop_down').show(); // Show the Loading...
+    $('#loading_study_drop_down').show(); // Show the Loading...
 	
-    $('#county_drop_down').hide(); // Hide the drop down
-    $('#no_county_drop_down').hide(); // Hide the "no counties" message (if it's the case)
+    $('#study_drop_down').hide(); // Hide the drop down
+    $('#no_study_drop_down').hide(); // Hide the "no study area" message (if it's the case)
 
-    $.getScript("js/states/"+ state.toLowerCase() +".js", function(){
+    $.getScript("js/levels/"+ levels.toLowerCase() +".js", function(){
 
-    populate(document.form.county);
+    populate(document.form.study);
 
- 	$('#loading_county_drop_down').hide(); // Hide the Loading...
-	$('#county_drop_down').show(); // Show the drop down
+ 	$('#loading_study_drop_down').hide(); // Hide the Loading...
+	$('#study_drop_down').show(); // Show the drop down
     });
 }
 }
 
 $(document).ready(function(){
-$("#state").change(drop_down_list);
+$("#levels").change(drop_down_list);
 });
 
 $(window).load(drop_down_list);
