@@ -1,8 +1,9 @@
-Dynamic Dropdown
-================
+Dynamic-DropDown-List
+=====================
 
-This simple jquery + javascript code has been created for Katy butterworth for placement.education.auckland.ac.nz web project.
+Dynamic Dependant DropDown List - Select a list and see how the drop down changes based on your selection
+This is for testing purpose only. Developed on 9th October 2012 - Requested by Katy Butterworth.
 
-For support
------------
-Please contact Jung Son for technical support
+Support
+-------
+Please contact Jung Son (jung921 at gmail dot com) for technical/web optimisation support. 
